@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# Lesson Planner with Gemini AI - Frontend Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application that harnesses Google's Gemini AI to create dynamic lesson plans with PDF generation capabilities.
 
-## Available Scripts
+## Features
+- Direct Gemini AI Integration
+- Real-time lesson plan generation
+- PDF export functionality
+- Clean and intuitive user interface
+- Responsive design for all devices
 
-In the project directory, you can run:
+## Setup Instructions
 
-### `npm start`
+1. Clone the repository:
+git clone https://github.com/yourusername/lesson-planner-frontend.git
+cd lesson-planner-frontend
+npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
+- React.js
+- @google/generative-ai library
+- TailwindCSS
+- jsPDF for PDF generation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
+/src
+  /components
+    - LessonForm.jsx
+    - PDFExport.jsx
+  /API
+    - gemini.js
+  /styles
+    - main.css
+  App.jsx
+  main.jsx
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Start development server:
+npm run dev
 
-### `npm run build`
+2. Build for production:
+npm run build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Preview production build:
+npm run preview
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Enter lesson details:
+   - Subject
+   - Grade Level
+   - Topic
+   - Duration
 
-### `npm run eject`
+2. Click "Generate Plan" to get AI-powered lesson content
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Export to PDF using the "Download PDF" button
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Development Notes
+- Uses Vite for faster development experience
+- Implements responsive design principles
+- Direct integration with Gemini AI
+- Client-side PDF generation
+- No backend required - fully frontend implementation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Browser Support
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
 
-## Learn More
+## License
+This project is licensed under the MIT License.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
+- Google Generative AI team for Gemini API
+- React.js community
